@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 23a - Game kiểm tra tốc độ | 231A010559</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <h1>Game Kiểm Tra Tốc Độ Phản Xạ</h1>
+
+        <div class="controls">
+            <label for="durationSelect">Thời gian (giây):</label>
+            <select id="durationSelect">
+                <option value="15">15s</option>
+                <option value="30" selected>30s</option>
+                <option value="45">45s</option>
+                <option value="60">60s</option>
+            </select>
+
+            <button type="button" id="startBtn">Bắt đầu chơi</button>
+            <button type="button" id="colorBtn">Đổi màu nền ngẫu nhiên</button>
+            <button type="button" id="playerBtn">Người chơi</button>
+        </div>
+
+        <p id="playerInfo" class="player-info" hidden>Người chơi — MSSV: 231A010559 (Trần Phạm Quốc Thanh)</p>
+
+        <div class="stats">
+            <div>Điểm: <span id="score">0</span></div>
+            <div>Thời gian còn lại: <span id="timeLeft">30</span>s</div>
+        </div>
+
+        <div id="arena" class="arena">
+            <button type="button" id="target" class="target" aria-label="Mục tiêu">Click!</button>
+        </div>
+
+        <div id="resultBox" class="result-box" hidden>
+            <h2>Hết giờ!</h2>
+            <p>Tổng số điểm đạt được: <strong id="finalScore">0</strong></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
